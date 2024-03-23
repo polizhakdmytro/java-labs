@@ -1,4 +1,4 @@
-package laba_2;
+package edu.ntudp.fit.polizhak;
 
 import java.util.Scanner;
 import java.util.Random;
