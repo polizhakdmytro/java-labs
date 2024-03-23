@@ -10,9 +10,9 @@ public class Runner222 {
         private static final int RANDOM_MIN = 1;
         private static final int RANDOM_MAX = 100;
 
-        private int[][] matrix;
-        private int width;
-        private int height;
+        private final int[][] matrix;
+        private final int width;
+        private final int height;
 
         public Runner222 (int width, int height) {
             this.width = width;
