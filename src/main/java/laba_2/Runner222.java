@@ -20,7 +20,7 @@ public class Runner222 {
             this.matrix = new int[height][width];
         }
 
-        // Метод для введення матриці з клавіатури
+        
         public void inputMatrixFromKeyboard(Scanner scanner) {
             System.out.println("Enter the elements of the matrix:");
             for (int i = 0; i < height; i++) {
@@ -30,7 +30,7 @@ public class Runner222 {
             }
         }
 
-        // Метод для генерації випадкової матриці
+       
         public void generateRandomMatrix() {
             Random random = new Random();
             System.out.println("Randomly generated matrix:");
@@ -41,7 +41,7 @@ public class Runner222 {
             }
         }
 
-        // Метод для пошуку мінімального елементу в матриці
+        
         public int findMinimum() {
             int min = matrix[0][0];
             for (int i = 0; i < height; i++) {
@@ -54,7 +54,7 @@ public class Runner222 {
             return min;
         }
 
-        // Метод для пошуку максимального елементу в матриці
+        
         public int findMaximum() {
             int max = matrix[0][0];
             for (int i = 0; i < height; i++) {
@@ -67,7 +67,7 @@ public class Runner222 {
             return max;
         }
 
-        // Метод для обчислення середнього арифметичного елементів матриці
+       
         public double calculateAverage() {
             double sum = 0;
             for (int i = 0; i < height; i++) {
@@ -81,13 +81,13 @@ public class Runner222 {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
 
-            // Введення розмірів матриці
+            
             System.out.println("Enter the width of the matrix (not more than " + MAX_SIZE + "):");
             int width = scanner.nextInt();
             System.out.println("Enter the height of the matrix (not more than " + MAX_SIZE + "):");
             int height = scanner.nextInt();
 
-            // Перевірка на максимальний розмір
+            
             if (width > MAX_SIZE || height > MAX_SIZE) {
                 System.out.println("Matrix size exceeds the maximum allowed size.");
                 return;
@@ -95,7 +95,7 @@ public class Runner222 {
 
             Runner222 matrixOperations = new Runner222 (width, height);
 
-            // Вибір методу введення матриці
+            
             System.out.println("Choose how to create the matrix:");
             System.out.println("1. Enter from keyboard");
             System.out.println("2. Generate randomly");
@@ -113,7 +113,7 @@ public class Runner222 {
                     return;
             }
 
-            // Виведення матриці
+            
             System.out.println("Matrix:");
             for (int i = 0; i < height; i++) {
                 for (int j = 0; j < width; j++) {
@@ -122,13 +122,13 @@ public class Runner222 {
                 System.out.println();
             }
 
-            // Пошук мінімального та максимального елементів
+            
             int min = matrixOperations.findMinimum();
             int max = matrixOperations.findMaximum();
             System.out.println("Minimum element: " + min);
             System.out.println("Maximum element: " + max);
 
-            // Обчислення середнього арифметичного
+            
             double average = matrixOperations.calculateAverage();
             System.out.println("Average: " + average);
 
