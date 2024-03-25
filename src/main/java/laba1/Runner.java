@@ -1,4 +1,4 @@
-package edu.ntudp.fit.polizhak;
+package laba1;
 
 public class Runner {
     public static void main(String[] args) {
