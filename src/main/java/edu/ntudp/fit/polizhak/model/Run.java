@@ -1,8 +1,8 @@
-package edu.ntudp.fit.polizhak;
+package edu.ntudp.fit.polizhak.model;
 
-import edu.ntudp.fit.polizhak.controller.*;
-import edu.ntudp.fit.polizhak.model.Human;
-import edu.ntudp.fit.polizhak.model.Sex;
+import edu.ntudp.fit.polizhak.model.model.Human;
+import edu.ntudp.fit.polizhak.model.model.Sex;
+import edu.ntudp.fit.polizhak.model.controller.*;
 
 
 public class Run {

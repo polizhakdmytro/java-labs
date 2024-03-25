@@ -1,10 +1,9 @@
-package edu.ntudp.fit.polizhak.controller;
+package edu.ntudp.fit.polizhak.model.controller;
 
-import edu.ntudp.fit.polizhak.model.Faculty;
-import edu.ntudp.fit.polizhak.model.Human;
+import edu.ntudp.fit.polizhak.model.model.Faculty;
+import edu.ntudp.fit.polizhak.model.model.Human;
 
 public class FacultyCreator  {
-    private Faculty faculty;
     private DepartmentCreator department;
 
     public DepartmentCreator getDepartmentInstance() {
@@ -15,12 +14,7 @@ public class FacultyCreator  {
         this.department = department;
     }
 
-    public Faculty getFaculty() {
-        return faculty;
-    }
-
-    private void setFaculty(Faculty faculty) {
-        this.faculty = faculty;
+    private void setFaculty(Faculty ignoredFaculty) {
     }
 
     public FacultyCreator(DepartmentCreator department, String name, Human head) {

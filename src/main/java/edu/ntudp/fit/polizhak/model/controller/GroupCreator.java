@@ -1,7 +1,7 @@
-package edu.ntudp.fit.polizhak.controller;
+package edu.ntudp.fit.polizhak.model.controller;
 
-import edu.ntudp.fit.polizhak.model.Group;
-import edu.ntudp.fit.polizhak.model.Human;
+import edu.ntudp.fit.polizhak.model.model.Group;
+import edu.ntudp.fit.polizhak.model.model.Human;
 
 public class GroupCreator {
     private FacultyCreator faculty;

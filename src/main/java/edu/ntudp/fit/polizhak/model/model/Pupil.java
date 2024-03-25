@@ -1,4 +1,4 @@
-package edu.ntudp.fit.polizhak.model;
+package edu.ntudp.fit.polizhak.model.model;
 
 public abstract class Pupil implements IPupil {
 

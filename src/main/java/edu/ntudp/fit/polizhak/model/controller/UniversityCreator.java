@@ -1,7 +1,7 @@
-package edu.ntudp.fit.polizhak.controller;
+package edu.ntudp.fit.polizhak.model.controller;
 
-import edu.ntudp.fit.polizhak.model.Human;
-import edu.ntudp.fit.polizhak.model.University;
+import edu.ntudp.fit.polizhak.model.model.Human;
+import edu.ntudp.fit.polizhak.model.model.University;
 
 public class UniversityCreator {
     private University university;

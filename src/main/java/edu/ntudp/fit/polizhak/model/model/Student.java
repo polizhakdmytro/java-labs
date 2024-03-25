@@ -1,4 +1,4 @@
-package edu.ntudp.fit.polizhak.model;
+package edu.ntudp.fit.polizhak.model.model;
 
 public class Student extends Human {
     private String groupName;

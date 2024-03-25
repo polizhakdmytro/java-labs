@@ -1,12 +1,12 @@
-package edu.ntudp.fit.polizhak.controller;
+package edu.ntudp.fit.polizhak.model.controller;
 
 
-import edu.ntudp.fit.polizhak.model.Department;
-import edu.ntudp.fit.polizhak.model.Human;
+import edu.ntudp.fit.polizhak.model.model.Department;
+import edu.ntudp.fit.polizhak.model.model.Human;
 
 public class DepartmentCreator  {
     private UniversityCreator university;
-    private Department department;
+
     public UniversityCreator getUniversityInstance() {
         return university;
     }
@@ -15,12 +15,7 @@ public class DepartmentCreator  {
         this.university = university;
     }
 
-    public Department getDepartment() {
-        return department;
-    }
-
-    private void setDepartment(Department department) {
-        this.department = department;
+    private void setDepartment(Department ignoredDepartment) {
     }
 
     public DepartmentCreator(UniversityCreator university, String departmentName, Human headOfDepartment) {
@@ -30,4 +25,5 @@ public class DepartmentCreator  {
         department.setHead(headOfDepartment);
         setUniversityInstance(university);
     }
+
 }
