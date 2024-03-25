@@ -4,6 +4,7 @@ import edu.ntudp.fit.polizhak.controller.*;
 import edu.ntudp.fit.polizhak.model.Human;
 import edu.ntudp.fit.polizhak.model.Sex;
 
+
 public class Run {
     public static Human createHeadOfUniversity() {
         Human human = new Human();
